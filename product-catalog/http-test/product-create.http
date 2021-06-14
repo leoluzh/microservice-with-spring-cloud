@@ -1,0 +1,8 @@
+POST http://{{host}}:{{port}}/api/v1/products
+Content-Type: application/json
+Content-Encoding: UTF-8
+
+{
+"name" :  "Lobo Solitário",
+"amount": "100"
+}

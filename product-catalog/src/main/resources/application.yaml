@@ -1,0 +1,16 @@
+spring:
+
+  application:
+    name: product-catalog
+
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+  elasticsearch:
+    rest:
+      connection-timeout: 1s
+      read-timeout: 1m
+      password:
+      username:
+      uris: http://localhost:9200,http://localhost:9300

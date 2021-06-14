@@ -1,0 +1,26 @@
+version: "3.2"
+
+services:
+
+  elasticsearch:
+      container_name: "elasticsearch"
+      image: elasticsearch:7.13.1
+      ports:
+        - 9200:9200
+        - 9300:9200
+      environment:
+        - discovery.type=single-node
+      networks:
+        - product-catalog-net
+
+  redis:
+      container_name: "redis"
+      image: redis:6.2.4
+      ports:
+        - 6379:6379
+      networks:
+        - product-catalog-net
+
+networks:
+  product-catalog-net:
+    driver: bridge
