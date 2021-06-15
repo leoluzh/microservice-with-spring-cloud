@@ -7,3 +7,5 @@ spring:
       server:
         git:
           uri: https://github.com/leoluzh/microservices-with-spring-cloud-config.git
+          default-label: main
+
